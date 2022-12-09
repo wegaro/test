@@ -1,0 +1,466 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 4px 50px 30px 50px;
+}
+
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header & navigation bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 10px 10px 10px 55px;
+}
+
+
+.logo {
+    width: 100px;
+    height: 47px;
+    margin-left: -25px;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+
+.navbar-li {
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+.navacc-active, .navact-active {
+    padding: 40px 0px 0px 0px;
+    border-top: 2px solid transparent;
+}
+
+.navacc-active:hover, .navact-active:hover {
+    color: rgb(0, 101, 252);
+    border-color: rgb(0, 101, 252);
+    text-decoration: none;
+}
+
+/* Search bar */
+.find-place {
+    font-size: 22px;
+}
+
+.downtown-nature{
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px 0 15px 0;
+}
+
+.location-pin {
+    object-fit: cover;
+    padding: 15px 17px 15px 17px;
+    border-radius: 12px 0 0 12px;
+    background-color: rgb(242, 242, 242);
+}
+
+.text-box {
+    border: none;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid rgb(242, 242, 242);
+    padding: 5px;
+    font-weight: 700;
+}
+
+.search-button {
+    display: inline-block;
+    background-color: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0px 12px 12px 0px;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Filter */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(242, 242, 242);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 50px;
+    min-width: 100px;
+    padding-left: 0px;
+    padding-right: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fa-money-bill-wave, .fa-child-reaching, .fa-heart, .fa-dog {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    color: rgb(0, 101, 252);
+    background-color: rgb(222, 235, 255);
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.icon-text {
+    margin-left: 10px;
+}
+
+/* Information */
+.information {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 18px 0 20px 0;
+}
+
+.fa-info {
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    border: 2px solid rgb(242, 242, 242);
+    color: rgb(0, 101, 252);
+    padding-top: 3px;
+    padding-left: 1px;
+    text-align: center;
+    justify-items: center;
+    font-size: 14px;
+}
+
+/* Accommodations section */
+
+.accommodations-most-popular {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 15px 15px 15px 15px;
+    height: 660px;
+}
+
+.accommodations-container {
+    width: 60%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 25px 25px 25px 25px;
+    height: 100%;
+}
+
+.sections-title {
+    background: rgb(242, 242, 242);
+    border-radius: 15px 15px 0px 0px;
+    border: solid rgb(242, 242, 242);
+    padding-bottom: -5px;
+}
+
+.title-text {
+    font-size: 22px;
+    background: rgb(242, 242, 242);
+    padding: 30px 0px  0px 39px;
+    line-height: 0px;
+}
+
+.accommodations-row {
+    background: rgb(242, 242, 242);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 25px 10px 25px;
+    align-content: center;
+}
+
+.accommodations-card {
+    background: rgb(255, 255, 255);
+    width: 255px;
+    height: 220px;
+    margin: 10px;
+    border-radius: 16px 16px 16px 16px;
+    padding: 5px 5px 0px 5px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.accommodations-img {
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.text-position {
+    margin-top: -12px;
+    line-height: 1px;
+    padding-left: 12px;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.blue-star {
+    color: rgb(0, 101, 252);
+    font-size: 14px;
+}
+
+.gray-star {
+    color: rgb(228, 227, 227);
+    font-size: 14px;
+}
+
+
+.show-more {
+    font-weight: 700;
+    font-size: 18px;
+    background-color: rgb(242, 242, 242);
+    padding-left: 50px;
+    border-radius: 0px 0px 0px 25px;
+}
+
+.show-more:hover {
+    color: #0065fc;
+}
+/* Most popular section */
+
+.most-popular {
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 25px 25px 25px 25px;
+    gap: 15px;
+}
+
+.popular-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.aside-title {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.black-star {
+    font-size: 18px;
+    padding-right: 50px;
+    padding-top: 20px;
+    background-color: #f2f2f2;
+}
+
+.popular-card {
+    display: flex;
+    width: 400px;
+    height: 150px;
+    border-radius: 16px 16px 16px 16px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.popular-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px 0px 0px 16px;
+    margin: 5px;
+    object-fit: cover; 
+}
+
+.popular-text {
+    padding-left: 12px;
+    line-height: 1px;
+}
+
+.popular-stars {
+    padding-top: 50px;
+}
+
+.popular-stars-line2 {
+    padding-top: 20px;
+}
+
+
+/* Activities */
+
+.activities-container {
+    display: block;
+}
+
+.activities-title {
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.activities-title-text {
+    background-color: white;
+    font-size: 22px;
+    padding-left: 0px;
+}
+
+.big-container {
+    display: flex;
+    width: 100%;
+    height: 530px;
+    gap: 50px;
+}
+
+.card-row {
+    width: 25%;
+    height: 450px;
+}
+
+.activities-bigimg {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.activities-text {
+    padding-top: 20px;
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0 0px 10px 5px rgba(119, 118, 118, 0.1);
+    height: 60px;
+    margin-top: -4px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 500px;
+}
+
+.card-rowsm {
+    width: 100%;
+    height: 300px;
+    border-radius: 0px 0px 16px 16px;
+}
+
+.activities-smimg1 {
+    width: 100%;
+    height: 210px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.activities-smimg2 {
+    width: 100%;
+    height: 130px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.padding-img2 {
+    padding-top: 20px;
+}
+
+.activities-smimg3 {
+    width: 100%;
+    height: 150px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.activities-smimg4 {
+    width: 100%;
+    height: 183px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.padding-img4 {
+    padding-top: 25px;
+}
+
+/* Footer */
+
+.container-footer {
+    display: flex;
+    gap: 21%;
+    background-color: rgb(242, 242, 242);
+    padding: 20px 0px 20px 50px;
+}
+  
+.footer-column {
+    background-color: rgb(242, 242, 242);
+}
+  
+.footer-title {
+    background-color: rgb(242, 242, 242);
+    font-size: 18px;
+}
+
+.footer-links {
+    background-color: #f2f2f2;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.footer-links > li {
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+  
+  
+  /* Media query tablet */
+  /* Media query mobile */
+  
